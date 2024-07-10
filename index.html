@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@400;500;700;900;&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-right">
+        <a href="#" aria-label="Gmail" target="_top" class="header-link"
+          >Gmail</a
+        >
+        <a
+          href="#"
+          aria-label="Search for images"
+          target="_top"
+          class="header-link"
+          >Зображення</a
+        >
+        <div class="menu-icon">
+          <a
+            href="#"
+            aria-label="Google apps"
+            target="_top"
+            aria-expanded="false"
+            role="button"
+          >
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#google-menu"></use>
+            </svg>
+          </a>
+        </div>
+        <a class="sign-in-button" aria-label="Sign in" href="#" target="_top"
+          ><span>Увійти</span></a
+        >
+      </div>
+    </header>
+    <main class="google-container">
+      <h1 hidden>Google Search Page</h1>
+      <section>
+        <h1 hidden>Google Logo</h1>
+        <div class="google-logo">
+          <img
+            id="logo"
+            src="./images/google-logo-2x.png"
+            srcset="
+              ./images/google-logo-1x.png 1x,
+              ./images/google-logo-2x.png 2x
+            "
+            alt="Google"
+            height="92"
+            width="272"
+          />
+        </div>
+      </section>
+      <section>
+        <h2 hidden>Google Search</h2>
+        <div class="search-container">
+          <div class="search-form">
+            <div class="search-form-input">
+              <div class="input-icon-search">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#google-search"></use>
+                </svg>
+              </div>
+              <input type="text" class="search-input" />
+              <ul class="input-right-icons">
+                <li>
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#google-keyboard"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg width="34" height="34">
+                    <use href="./images/icons.svg#google-mic"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg width="34" height="34">
+                    <use href="./images/icons.svg#google-lens"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+            <div class="buttons">
+              <button class="button">Пошук Google</button>
+              <button class="button" id="luckButton">Мені пощастить</button>
+            </div>
+          </div>
+        </div>
+        <div class="language">Мова Google: <a href="#">English</a></div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-top">Україна</div>
+      <div class="footer-bottom">
+        <ul class="footer-bottom-list">
+          <li><a href="#">Про Google</a></li>
+          <li><a href="#">Реклама</a></li>
+          <li><a href="#">Для бізнесу</a></li>
+          <li><a href="#">Як працює Пошук</a></li>
+        </ul>
+
+        <ul class="footer-bottom-list">
+          <li><a href="#">Конфіденційність</a></li>
+          <li><a href="#">Умови</a></li>
+          <li><a href="#">Налаштування</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./js/script.js" type="module"></script>
+  </body>
+</html>
